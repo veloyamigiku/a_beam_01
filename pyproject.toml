@@ -1,0 +1,16 @@
+[project]
+name = "a-beam-01"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "velo.yamigiku",email = "velo.yamigiku@gmail.com"}
+]
+requires-python = ">=3.13,<4.0"
+dependencies = [
+    "apache-beam (==2.71.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
