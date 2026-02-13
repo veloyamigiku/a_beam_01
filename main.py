@@ -7,4 +7,6 @@ with beam.Pipeline(options=pipeline_options) as p:
 
   (p | beam.Create(range(1, 11))
      | beam.combiners.Count.Globally()
-     | beam.LogElements(prefix='value='))
+     | beam.io.WriteToText(
+       file_path_prefix='gs://veloyamigiku-dataflow-template-bucket/output/sample',
+       file_name_suffix='.csv'))#beam.LogElements(prefix='value='))

@@ -7,7 +7,7 @@ authors = [
 ]
 requires-python = ">=3.13,<4.0"
 dependencies = [
-    "apache-beam (==2.71.0)"
+    "apache-beam[gcp] (==2.71.0)"
 ]
 
 
