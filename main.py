@@ -7,4 +7,4 @@ with beam.Pipeline(options=pipeline_options) as p:
 
   (p | beam.Create(range(1, 11))
      | beam.combiners.Count.Globally()
-     | beam.LogElements())
+     | beam.LogElements(prefix='value='))
